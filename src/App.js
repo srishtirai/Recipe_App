@@ -18,12 +18,10 @@ searchRecipe(recipename)
 {
   fetch(`https://cors-anywhere.herokuapp.com/https://recipesapi.herokuapp.com/api/search?q=${recipename}`)
   .then(response=>response.json())
-  //.then(data=>console.log("fectched json data",data))
   .then(data=>this.setState({
     recipes: data.recipes
   }))
-  
-  // 
+  // .then(data=>console.log("fectched json data",data))
 }
 
 render()

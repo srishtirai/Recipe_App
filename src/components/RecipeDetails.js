@@ -36,7 +36,9 @@ searchRecipe(recipeId)
         
         return (
             <div className="Recipe-details">
-           
+            <button><Link to="/">
+                 HOME
+            </Link></button>
                <img src ={image_url} alt={recipe_id} />  
               <p>{title}</p>
               <p>{publisher}</p>
@@ -53,9 +55,6 @@ searchRecipe(recipeId)
                     ingredients.map((ingridient,index)=>(<li key={index}>{ingridient}</li>))
                   }
                 </ul>
-                <Link to="/">
-                 HOME
-                </Link>
            </div>
            );
         }
