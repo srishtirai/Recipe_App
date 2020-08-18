@@ -4,7 +4,7 @@ import Recipe from './Recipe';
 function Recipes(props)
 {
      return(
-       <div classname="back">
+       <div className="back">
          {
             props.recipes.map(recipe=><Recipe key={recipe.recipe_id} data={recipe}/>)
          }

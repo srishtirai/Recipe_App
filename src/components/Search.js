@@ -7,7 +7,7 @@ function Search(props)
         e.preventDefault();
         props.onSubmit(e.target.recipename.value);
     }}>
-        <div classNmae="Searchbar">
+        <div className="Searchbar">
             <input type="text" name="recipename" placeholder="Enter ingredient or dish"></input>
             <button type="submit">Search</button>
         </div>
